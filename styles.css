@@ -1,0 +1,317 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.125rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.x {
+  color: white;
+  text-align: left;
+  margin-left: 0.5em;
+  display: flex;
+  justify-content: flex-start;
+  height: 2em;
+  width: 2em;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #2e323f;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav-list {
+  margin-top: 1em;
+  list-style-type: none;
+}
+
+.list-item {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.nav-link {
+  list-style: none;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-list--secondary {
+  margin-top: 2em;
+}
+
+.nav-button {
+  background-color: #a59678;
+  border-radius: 100px;
+  padding: 0.25rem 0.75rem;
+}
+
+section {
+  padding: 2em 0;
+}
+
+section p {
+  margin: 1em 0;
+}
+
+.section-one {
+  background-color: #3b4050;
+  text-align: center;
+}
+
+h1 {
+  color: #a59678;
+}
+
+span {
+  color: white;
+}
+
+.intro-text {
+  color: #d2d5dd;
+}
+
+button {
+  background-color: #a59678;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 0.75em 1.5em;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.section-two {
+  background-color: #6f737f;
+  color: #d2d5dd;
+  text-align: center;
+}
+
+.section-two h2 {
+  color: #a59678;
+}
+
+.section-three-title,
+h3 {
+  color: #a59678;
+}
+
+.sidebar-text {
+  background-color: #3b4050;
+  color: #d2d5dd;
+  text-align: center;
+  padding: 1em;
+  margin: 1.5em 0;
+}
+
+.sidebar h2 {
+  color: #fff;
+}
+
+.sidebar p {
+  margin: 1.5em 0;
+}
+
+.section-four {
+  background-color: #3b4050;
+  text-align: center;
+}
+
+.section-four h2 {
+  color: #fff;
+}
+
+.section-four p {
+  color: #d2d5dd;
+}
+
+@media (min-width: 700px) {
+  .sidebar {
+    display: flex;
+  }
+
+  .sidebar-text {
+    margin: 0 1em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .x {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: auto;
+  }
+
+  .nav-list {
+    display: flex;
+    margin: 0;
+  }
+
+  .list-item {
+    margin: 0 0 0 3em;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .section-one {
+    display: flex;
+    min-height: 1em;
+    padding: 9em 0;
+  }
+
+  h1 {
+    font-size: 5.6rem;
+    text-align: left;
+    margin: 0;
+  }
+
+  .intro {
+    line-height: 1;
+    text-align: left;
+  }
+
+  .intro-text {
+    align-self: flex-end;
+  }
+
+  .intro-text p {
+    font-size: 1.9rem;
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  .section-two {
+    padding: 6em 0;
+  }
+
+  .section-two h2 {
+    font-size: 2.6rem;
+  }
+
+  .section-two p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .section-two .col + .col {
+    margin-left: 9em;
+  }
+
+  .section-three .col {
+    width: 60%;
+  }
+
+  .section-three h2 {
+    font-size: 2.6rem;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .section-three p {
+    font-size: 1.35rem;
+    line-height: 1.4;
+    margin-bottom: 2.5em;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .sidebar {
+    width: 30%;
+    padding: 0;
+    display: block;
+    margin-left: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .sidebar h2 {
+    font-size: 1.85rem;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .sidebar p {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidebar-text {
+    margin: 1em 0;
+  }
+
+  .section-four {
+    padding: 4em 0;
+  }
+
+  .section-four h2 {
+    font-size: 2.9rem;
+    font-family: "Oswald", sans-serif;
+    padding: 1em 0;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.85rem;
+    font-family: "Oswald", sans-serif;
+    color: #a59678;
+  }
+
+  .section-four p {
+    font-size: 1rem;
+  }
+
+  .section-four .col {
+    text-align: left;
+  }
+
+  .col-2 {
+    padding-left: 6em;
+  }
+
+  .col-4 {
+    padding-left: 6em;
+  }
+}
